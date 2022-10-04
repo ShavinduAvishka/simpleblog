@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>When to Use Static Generation v.s. Server-side Rendering</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/755fa6b8ee.js" crossorigin="anonymous"></script> <!-- An external script tag to import custom icons to the page -->
+</head>
+
+	<style>
+	img {
+  		border-radius: 50%;
+	}
+	</style>
+
+<body>
+	<br>
+	<div class="center"> <!-- Entire content has been wrapped around a div to align center to the page -->
+
+	<img src="Profile.png" width=100px>
+
+	<h2><a href="index.html">Shavindu Avishka</a></h2>
+
+	<h1>When to Use Static Generation v.s. <br>Server-side Rendering</h1>
+
+	<p style="color: grey;">October 4,  2022</p> <!-- Inline CSS has been added to change the color of the text. -->
+
+	<p>
+		We recommend using Static Generation (with and without data) whenever<br>
+		possible because your page can be built once and served by CDN, which makes <br>
+		it much faster than having a server render the page on every request.<br><br>
+
+		You can use Static Generation for many types of pages, including: Marketing pages,<br>Blog posts, E-commerce product listings, Help and documentation.<br><br>
+
+		You should ask yourself: "Can I pre-render this page ahead of a user's request?" <br>If the answer is yes, then you should choose Static Generation.<br>
+
+		On the other hand, Static Generation is not a good idea if you cannot pre-render<br> a page ahead of a user's request. Maybe your page shows frequently updated data, <br>
+		and the page content changes on every request.<br><br>
+
+		In that case, you can use <strong>Server-Side Rendering.</strong> <br>It will be slower, but the pre-rendered page will always be up-to-date.<br> Or you can skip pre-rendering and use client-side JavaScript to populate data.<br><br>
+	
+		
+		<a href="index.html" style="text-indent: -100%;"><i class="fa-solid fa-arrow-left"></i>Back To Home</a> <!-- Imported Icon has been used with an i tag. -->
+
+		
+	</p>
+	</div>
+
+</body>
+</html>
